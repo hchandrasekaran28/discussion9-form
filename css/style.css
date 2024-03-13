@@ -10,24 +10,24 @@
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: #000;
+    background: #96cfca;
   }
 
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: #000;
   }
 
   #name {
     width: 100%;
     padding: 10px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: #808080;
+    color: #808080;
   }
 
   #message {
@@ -46,7 +46,7 @@
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #00008b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,5 +54,21 @@
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #00008b;
+  }
+
+  .skip-to-content-link {
+    left: -100px;
+    position: relative;
+  }
+  
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
   }
